@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student registration form</title>
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            background-color: #f4f6f7;
+             margin: 0;
+             padding: 20px;
+        }
+        form{
+            background-color: #ffff;
+            
+            max-width: 600px;
+            margin: 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2{
+            text-align: center;
+            color: #333;
+        }
+        fieldset{
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 16px;
+            border-radius: 25px;
+        }
+        legend
+        {
+            font-weight: bold;
+            color:#444;
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"]
+        {
+            width: auto;
+            margin-right: 50px;
+        }
+        button{
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius:13px;
+            cursor:pointer;
+            margin-right: 20px;
+
+        }
+        button:hover{
+            background-color:#0056b3
+        }
+        .name
+        {
+            display: flex;
+            gap:10px;
+
+        }
+        .name div{
+            flex:1;
+
+
+        }
+        textarea{
+            resize: vertical;
+        }
+
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h2>Student Registration Form</h2>
+      <!-- personal data -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="name">
+          <div>
+            <label for="first name">First Name</label>
+            <input
+              type="text"
+              placeholder="Enter first name"
+              id="first name"
+              required
+            />
+          </div>
+          <div>
+            <label for="last name">Last Name</label>
+            <input
+              type="text"
+              placeholder="Enter last name"
+              id="last name"
+              required
+            />
+
+          </div>
+
+        </div>
+        <label for="">Email</label>
+        <input type="text" placeholder="example@.com"required>
+        <label for="">Password</label>
+        <input type="text" placeholder="*******"required>
+        <label for=""> Phone Number</label>
+        <input type="number"placeholder=" 03xxxxxxxxxxxxx"required>
+        <label for="">Date of Birth</label>
+        <input type="date"required>
+        <label for="">Gender</label>
+        <input class= "inine-class"type="radio"name="gender">Male
+        <input class= "inine-class"type="radio"name="gender">Female
+        <input class= "inine-class"type="radio"name="gender">Others
+        <!-- education details section -->
+         <fieldset>
+            <legend>Education Details</legend>
+            <label for="">Highest Qualification</label>
+            <select name="" id="">
+                <option value="">select</option>
+                <option value="">Matric </option>
+                <option value="">Intermediate</option>
+                <option value="">Bachelor</option>
+                <option value="">Masters</option>
+            </select>
+            <label for=""> Field of Study</label>
+            <select name="" id="">
+                <optgroup label="computer science">
+                    <option value="">web development</option>
+                    <option value="">AI/ML</option>
+                    <option value="">Data science </option>
+                    <option value="">Pthyon developer</option>
+
+                </optgroup>
+                  <optgroup label="engineering">
+                    <option value="">computer  science</option>
+                    <option value="">AI/ML</option>
+                    <option value="">Data science </option>
+                    <option value="">Pthyon developer</option>
+
+                </optgroup>
+
+            </select>
+            <label for="">Skills</label>
+            <input class ="checkbox1" type="checkbox">HTML
+            <input class ="checkbox1" type="checkbox">CSS
+            <input class ="checkbox1" type="checkbox">JAVASCRIPT
+            <input class ="checkbox1" type="checkbox">REACT
+
+         </fieldset>
+         <fieldset>
+            <legend>Upoads&Preference</legend>
+            <label for="">Upload Resume</label>
+            <input type="file" required>
+            <label for="">Available Time</label>
+            <input type="time"required>
+             <label for="">Experience level (0-10)</label>
+             <input type="range" min="0" max="10" required>
+         </fieldset>
+         <fieldset>
+            <legend>Additional Information</legend>
+            <label for="">About yourself</label>
+            <textarea placeholder="write something about your"  row ="5" name="" id=""></textarea>
+            <label for="">I agree with terms & conditions</label>
+             <input type="checkbox">
+            
+
+         </fieldset>
+
+
+      </fieldset>
+
+      <button  type="submit"> Submit</button>
+      <button  type ="reset">Reset</button>
+    </form>
+  </body>
+</html>
